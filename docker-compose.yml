@@ -1,0 +1,14 @@
+services:
+  web_booking:
+    build: .
+    ports:
+      - "4173:4173"
+    environment:
+      - NODE_ENV=production
+    container_name: web_booking
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    external: true

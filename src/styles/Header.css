@@ -1,0 +1,258 @@
+/* Header di halaman Home */
+.home-header {
+  color: white;
+}
+
+/* Header di halaman selain Home */
+.default-header {
+  color: black;
+}
+
+/* Style utama untuk header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  max-width: 100%; /* Membatasi lebar header agar tidak melewati layar */
+  z-index: 1000;
+  top: 0;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Menghitung padding dalam ukuran */
+}
+
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black; /* Ubah warna teks saat scroll */
+}
+
+.logo img {
+  width: 70px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0; /* Hilangkan margin default */
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit; /* Warna sesuai konteks */
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #f86f6f;
+  color: white;
+}
+
+.header .logo {
+  margin-right: auto; /* Menempatkan logo ke kiri */
+}
+
+.header .logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Tombol login dan signup */
+.nav-menu .cart .logout-button .btn-login .btn-signup {
+  display: flex;
+  gap: 10px;
+}
+
+.header .btn-signup {
+  color: black;
+  border: 1px solid #f86f6f;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.header .btn-signup:hover {
+  background-color: #f86f6f;
+  color: white;
+}
+
+.btn-login {
+  background-color: #f86f6f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #ff5a5a;
+}
+
+.logout-button {
+  background-color: #f86f6f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff5a5a;
+}
+
+/* Burger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1002;
+  transition: transform 0.3s ease;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Burger menu berubah jadi "X" saat menu terbuka */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: black !important; /* Pastikan warnanya berubah */
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0 !important; /* Hilangkan garis tengah */
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: black !important; /* Pastikan warnanya berubah */
+}
+
+/* Saat scrolled, ubah warna garis burger menjadi hitam */
+.hamburger.scrolled span {
+  background-color: black;
+}
+
+/* Media query untuk layar dengan lebar 1080px atau lebih besar */
+@media (min-width: 1080px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Media query untuk tablet dan mobile */
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-menu ul {
+    gap: 8px;
+  }
+
+  .header .logo h2 {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu a {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header.menu-open h2,
+  .header.menu-open a,
+  .header.menu-open span {
+    color: black !important;
+  }
+
+  .hamburger {
+    position: absolute; /* Posisi tetap di kanan atas */
+    top: 10px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+  }
+
+  .nav-menu {
+    display: none; /* Sembunyikan menu secara default */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Tampilkan menu saat aktif */
+    transform: translateX(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-menu a {
+    text-align: center;
+    width: 80%;
+    padding: 12px;
+  }
+
+  .btn-login,
+  .btn-signup {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .header .logo h2 {
+    font-size: 1rem;
+  }
+
+  .nav-menu a {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

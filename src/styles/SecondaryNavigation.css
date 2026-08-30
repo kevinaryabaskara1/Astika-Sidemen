@@ -1,0 +1,78 @@
+/* Secondary Navigation - Sticky modern tabs */
+.secondary-nav-wrapper {
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.secondary-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.secondary-nav-inner {
+  display: flex;
+  gap: 4px;
+}
+
+.secondary-nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.secondary-nav-tab:hover {
+  color: #142536;
+  background: #f9fafb;
+}
+
+.secondary-nav-tab.active {
+  color: #f86f6f;
+  border-bottom-color: #f86f6f;
+}
+
+.secondary-nav-tab.active svg {
+  stroke: #f86f6f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .secondary-nav {
+    padding: 0 12px;
+  }
+
+  .secondary-nav-tab {
+    padding: 12px 14px;
+    font-size: 0.8rem;
+    gap: 6px;
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondary-nav-tab span {
+    display: none;
+  }
+
+  .secondary-nav-tab {
+    padding: 12px 16px;
+    justify-content: center;
+  }
+
+  .secondary-nav-tab svg {
+    width: 20px;
+    height: 20px;
+  }
+}

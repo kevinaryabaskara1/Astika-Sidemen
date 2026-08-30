@@ -1,0 +1,548 @@
+/* Shared Detail Page Styles - Homestay Theme */
+.standard-room-detail,
+.standard-activity-detail,
+.package-detail {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+/* Slider */
+.slider-standard,
+.slider-activity,
+.slider-package {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  overflow: hidden;
+}
+
+.slider-standard:hover,
+.slider-activity:hover,
+.slider-package:hover {
+  transform: none;
+}
+
+.slider-images-standard,
+.sliders-activity,
+.sliders-images {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: none;
+}
+
+.slider-images-standard:hover,
+.sliders-activity:hover,
+.sliders-images:hover {
+  transform: none;
+}
+
+/* Container */
+.standard-detail-container,
+.activity-detail-container,
+.package-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* Header */
+.standard-header h1,
+.activity-header h1,
+.package-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #142536;
+  margin-bottom: 4px;
+}
+
+.standard-header p,
+.activity-header p,
+.package-header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Description */
+.standard-description,
+.activity-description,
+.package-description {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 14px;
+}
+
+.description-btn-standard,
+.description-btn-activity,
+.description-btn {
+  background-color: #142536;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.standard-description p,
+.activity-description p,
+.package-description p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Details Section */
+.standard-details,
+.activity-details,
+.package-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.detail-section-standard,
+.inclusion-section-standard,
+.detail-section-activity,
+.inclusion-section-activity,
+.detail-section,
+.inclusion-section {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 14px;
+}
+
+.detail-btn-standard,
+.inclusion-btn-standard,
+.detail-btn-activity,
+.inclusion-btn-activity,
+.detail-btn,
+.inclusion-btn {
+  background-color: #142536;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Booking Options Layout */
+.booking-options-standard,
+.booking-options-activity,
+.booking-options {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.left-options-standard,
+.left-options-activity,
+.left-options {
+  background: #f8f9fa;
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.left-options-standard h3,
+.left-options-activity h3,
+.left-options h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #142536;
+  margin-bottom: 12px;
+}
+
+.left-options-standard p,
+.left-options-activity p,
+.left-options p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Right Summary */
+.right-summary-standard,
+.right-summary-activity,
+.right-summary {
+  background: #142536;
+  color: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.right-summary-standard h3,
+.right-summary-activity h3,
+.right-summary h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.right-summary-standard p,
+.right-summary-activity p,
+.right-summary p {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Search Bar / Date Picker */
+.search-bar {
+  border: 2px solid #e5e7eb;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-bar:hover {
+  border-color: #142536;
+  box-shadow: 0 2px 8px rgba(20,37,54,0.08);
+}
+
+.search-bar .fa-solid {
+  color: #f86f6f;
+  margin-right: 10px;
+}
+
+.button-date-picker {
+  background-color: #142536;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.button-date-picker:hover {
+  background-color: #1e3a5f;
+}
+
+/* Room/Activity Type Buttons */
+.room-type-standard,
+.activity-type-activity,
+.package-type {
+  margin-bottom: 20px;
+}
+
+.room-type-standard p,
+.activity-type-activity p,
+.package-type label,
+.package-type p {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #142536;
+  margin-bottom: 10px;
+}
+
+.room-type-standard button,
+.activity-type-activity button,
+.package-type button {
+  background-color: #fff;
+  border: 2px solid #e5e7eb;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.room-type-standard button:hover,
+.activity-type-activity button:hover,
+.package-type button:hover {
+  border-color: #142536;
+  background: #f9fafb;
+}
+
+.room-type-standard button.active,
+.activity-type-activity button.active-activity,
+.package-type button.active {
+  background-color: #142536;
+  color: white;
+  border-color: #142536;
+  font-weight: 600;
+}
+
+/* Quantity Section */
+.quantity-section-standard,
+.quantity-section-package {
+  margin-bottom: 16px;
+}
+
+.quantity-label-top-standard,
+.quantity-label-top-package {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #142536;
+  margin-bottom: 8px;
+}
+
+.quantity-section-inner-standard,
+.quantity-section-inner-package {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.quantity-label-standard,
+.quantity-label-package {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #142536;
+}
+
+.quantity-control-standard,
+.quantity-control-package {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn-standard,
+.quantity-btn-package {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #333;
+  background-color: #f9fafb;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quantity-btn-standard:hover,
+.quantity-btn-package:hover {
+  background-color: #142536;
+  color: #fff;
+  border-color: #142536;
+}
+
+.quantity-btn-standard:disabled,
+.quantity-btn-package:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.price-standard,
+.price-package {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #142536;
+  white-space: nowrap;
+}
+
+/* Login / Book Button */
+.login-btn-standard,
+.login-button-activity,
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f86f6f;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 16px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.login-btn-standard:hover,
+.login-button-activity:hover,
+.login-button:hover {
+  background-color: #e85b5b;
+  transform: translateY(-1px);
+}
+
+/* Grid 3 Col Lists */
+.grid-3-col ul,
+.grid-3-col ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px;
+  margin: 0 0 12px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.grid-3-col li {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.grid-3-col li::before {
+  content: "\2713";
+  color: #16a34a;
+  font-size: 12px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.grid-3-col strong { font-weight: bold; color: #142536; }
+.grid-3-col em { font-style: italic; color: #f86f6f; }
+.grid-3-col u { text-decoration: underline; }
+
+/* Exclusion list uses x mark instead of checkmark */
+.grid-exclusion li::before {
+  content: "\2717" !important;
+  color: #dc2626 !important;
+}
+
+/* Available Rooms / Activities */
+.available-rooms,
+.available-activities {
+  margin-bottom: 20px;
+}
+
+.available-rooms h3,
+.available-activities h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #142536;
+  margin-bottom: 10px;
+}
+
+.room-info,
+.activity-info {
+  background: #fff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-info h4,
+.activity-info h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #142536;
+  margin-bottom: 2px;
+}
+
+.room-info p,
+.activity-info p {
+  font-size: 0.85rem;
+  color: #16a34a;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+/* Hide date range predefined ranges */
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+
+/* Date picker dropdown */
+.date-picker-dropdown {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .standard-room-detail,
+  .standard-activity-detail,
+  .package-detail {
+    padding: 16px 12px 40px;
+  }
+
+  .standard-details,
+  .activity-details,
+  .package-details {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-options-standard,
+  .booking-options-activity,
+  .booking-options {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-images-standard,
+  .sliders-activity,
+  .sliders-images {
+    max-height: 280px;
+    border-radius: 12px;
+  }
+
+  .slider-standard,
+  .slider-activity,
+  .slider-package {
+    padding: 12px 0 0;
+  }
+
+  .standard-header h1,
+  .activity-header h1,
+  .package-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .grid-3-col ul,
+  .grid-3-col ol {
+    grid-template-columns: 1fr;
+  }
+
+  .right-summary-standard,
+  .right-summary-activity,
+  .right-summary {
+    position: static;
+  }
+
+  .room-type-standard button,
+  .activity-type-activity button,
+  .package-type button {
+    width: 100%;
+  }
+}

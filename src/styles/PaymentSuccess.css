@@ -1,0 +1,91 @@
+.success-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 12px;
+}
+
+.success-page h1 {
+  color: #16a34a;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.success-page p {
+  color: #333;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.success-transaction-details {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.success-transaction-details h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+.success-transaction-details div {
+  margin-bottom: 10px;
+  color: #444;
+  word-break: break-word;
+}
+
+.success-transaction-details strong {
+  color: #000000;
+  font-weight: 500;
+}
+
+.home-button {
+  width: 100%;
+  max-width: 400px;
+  background: #f43f5e;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.home-button:hover {
+  background: #be123c;
+}
+
+@media (max-width: 480px) {
+  .success-page {
+    padding: 18px 2px;
+  }
+  .success-transaction-details {
+    padding: 14px 8px;
+    font-size: 0.97rem;
+  }
+  .success-page h1 {
+    font-size: 1.3rem;
+  }
+  .home-button {
+    font-size: 1rem;
+    padding: 11px 0;
+  }
+}
