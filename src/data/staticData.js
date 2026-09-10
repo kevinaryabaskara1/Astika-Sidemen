@@ -5,6 +5,7 @@ import activitySnorkeling from "../assets/astika-image/images.jfif";
 import activityWeaving from "../assets/astika-image/images1.jfif";
 import activityTemple from "../assets/astika-image/images2.jfif";
 import activitySilverClass from "../assets/astika-image/images3.png";
+import activityScooter from "../assets/astika-image/images4.jfif";
 import packageSingle from "../assets/astika-image/1a.jpg";
 import packageCouple from "../assets/astika-image/2a.jpg";
 import packageGroup from "../assets/astika-image/1_31.jpeg";
@@ -17,6 +18,7 @@ const activityImages = {
   temple: activityTemple,
   weaving: activityWeaving,
   silverClass: activitySilverClass,
+  scooterTour: activityScooter,
 };
 
 const packageImages = {
@@ -231,6 +233,21 @@ export const activities = [
   ],
   additionals: [],
   images: [{ image_path: activityImages.silverClass }],
+},
+{
+  id: 7,
+  name: "Scooter Tour",
+  description:
+    "Explore the beautiful countryside of Bali on a thrilling scooter tour. Perfect for adventure seekers who want to experience the scenic landscapes at their own pace.",
+  product_thumbnail: NO_IMAGE,
+  inclusion: "<ul><li>Guide</li><li>Driver</li></ul>",
+  exclusion: "<ul><li>Personal Expenses</li><li>Meals</li></ul>",
+  variants: [
+    { id: 13, name: "Half Day", remaining_qty: 10 },
+    { id: 14, name: "Full Day", remaining_qty: 10 },
+  ],
+  additionals: [],
+  images: [{ image_path: activityImages.scooterTour }],
 },
 ];
 
