@@ -217,7 +217,7 @@ const MapSection = () => {
                 <li className="flex items-center">
                   <Phone className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" />
                   <a
-                    href="tel:+6285735862032"
+                    href="tel:+6285832366265"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     +62 857 3586 2032
@@ -969,7 +969,7 @@ const TransportRentalSection = ({ transport, rental }) => {
   const [selectedRental, setSelectedRental] = useState(null);
 
   const buildWhatsAppLink = (message) => {
-    const recipient = "6285735862032";
+    const recipient = "6285832366265";
     return `https://wa.me/${recipient}?text=${encodeURIComponent(message)}`;
   };
 

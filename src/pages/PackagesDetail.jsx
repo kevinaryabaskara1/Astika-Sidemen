@@ -213,7 +213,7 @@ const PackagesDetail = () => {
       return;
     }
 
-    const recipient = "6285735862032";
+    const recipient = "6285832366265";
     const subject = "Booking Package";
     const body = `
       Booking Details:
